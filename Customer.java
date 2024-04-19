@@ -1,6 +1,6 @@
 package atm;
 
-class Customer extends Thread {
+public class Customer extends Thread {
 	private final ATM atm;
 	private String name = "";
 
@@ -24,3 +24,4 @@ class Customer extends Thread {
 		System.out.println("Hi " + name);
 	}
 }
+

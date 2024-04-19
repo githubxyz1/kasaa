@@ -2,8 +2,7 @@ package atm;
 
 import java.util.Arrays;
 
-//assumptions
-class ATM implements Runnable {
+public class ATM implements Runnable {
 
 	private static final int[] denominations = { 1000, 500, 100, 50, 20, 10 };
 
@@ -81,10 +80,10 @@ class ATM implements Runnable {
 	}
 
 	void reportInsufficientAmmount() {
-		System.out.println("Unable to dispense cash at this moment for this big amount");
+		System.out.println("Amount unavailable. Please try later.");
 	}
 
-	boolean isAmountSufficient() {
+	public boolean isAmountSufficient() {
 		return amountEntered <= totalCash ? true : false;
 	}
 
@@ -118,3 +117,4 @@ class ATM implements Runnable {
 
 	}
 }
+
