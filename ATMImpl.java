@@ -1,8 +1,5 @@
 package atm;
-
-//package here, everywhere????
-
-//??POM 
+ 
 import java.util.Scanner;
 
 public class ATMImpl {
