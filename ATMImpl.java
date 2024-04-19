@@ -21,7 +21,6 @@ public class ATMImpl {
 			cb.start();
 		}
 
-		// }
 	}
 
 }
